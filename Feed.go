@@ -5,6 +5,7 @@ import (
 	"net/http"
 )
 
+// Feed object
 type Feed struct {
 	ID          string       `json:"ID" description:"The ID of the Feed"`
 	Title       string       `json:"Title,required" description:"A descriptive name for the Feed"`
@@ -24,18 +25,22 @@ type Feed struct {
 	Datastreams []Datastream `json:"Datastreams" description:"A collection of the Datastreams in this Feed"`
 }
 
+// FeedSimpleListHandler lists feeds in summary format
 func FeedSimpleListHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "FeedSimpleListHandler!\n\n%s", r.RequestURI)
 }
 
+// FeedVerboseListHandler lists feeds in verbose format
 func FeedVerboseListHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "FeedVerboseListHandler!\n\n%s", r.RequestURI)
 }
 
+// FeedDetailHandler details a feed
 func FeedDetailHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "FeedDetailHandler!\n\n%s", r.RequestURI)
 }
 
+// FeedUpdateHandler updates details of a feed
 func FeedUpdateHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "FeedUpdateHandler!\n\n%s", r.RequestURI)
 }

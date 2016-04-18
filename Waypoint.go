@@ -1,5 +1,6 @@
 package main
 
+// Waypoint object
 type Waypoint struct {
 	Timestamp string `json:"at,required" description:"The time when the device changed location"`
 	Lonitude  string `json:"lon" description:"The longitude of the device"`

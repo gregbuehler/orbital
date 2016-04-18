@@ -1,5 +1,6 @@
 package main
 
+// Location object
 type Location struct {
 	Disposition string     `json:"disposition" description:"Whether the location is mobile or fixed"`
 	Elevation   string     `json:"ele" description:"The elevation of the device"`

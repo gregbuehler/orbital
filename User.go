@@ -1,6 +1,7 @@
 package main
 
+// User object
 type User struct {
-	UserId   string `json:"user_id" description:"Unique user identifier"`
+	UserID   string `json:"user_id" description:"Unique user identifier"`
 	Username string `json:"username" description:"Username of user"`
 }
