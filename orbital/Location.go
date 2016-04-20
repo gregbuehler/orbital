@@ -1,4 +1,4 @@
-package main
+package orbital
 
 // Location object
 type Location struct {

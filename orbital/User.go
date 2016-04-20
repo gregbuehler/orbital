@@ -1,4 +1,4 @@
-package main
+package orbital
 
 // User object
 type User struct {
