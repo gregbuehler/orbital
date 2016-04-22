@@ -10,10 +10,7 @@ import (
 
 // Feed object
 type Feed struct {
-	ID          string       
-	`json:"ID" 
-	 description:"The ID of the Feed"
-	`
+	ID          string	`json:"ID" description:"The ID of the Feed"`
 	Title       string       `json:"Title,required" description:"A descriptive name for the Feed"`
 	Private     string       `json:"Private" description:"Whether or not the Feed is private to the creator of the Feed"`
 	Tags        []string     `json:"Tags" description:"Tagged metadata about the Feed"`
